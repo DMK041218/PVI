@@ -1,8 +1,26 @@
-Dataset Download
-LLaVA-665K dataset is available on Download Link.
+# PVI:
+<a href="https://huggingface.co/datasets/AkiyasuDMK/PVI_Dataset">
+  <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-PVI__Dataset-blue?color=ffc107&logoColor=white&style=flat">
+</a>
 
-Cambrian-7M dataset is available on Download Link.
 
-Then follow the original repo to download the image data.
+## Install Enviroment
+Install the original enviroment here https://github.com/haotian-liu/LLaVA
 
-You can split the data into random chunks for parallel gradient computation using slurm scripts. For efficient processing, request as many CPUs as possible (e.g., 96 CPUs), as the splitting operation is CPU-intensive and can be parallelized. For example to split the 7M Cambrian dataset into 3000 chunks with 96 CPUs takes about 10-15 minutes.
+## Dataset Download
+LLaVA-665K dataset is available on [Download Link.](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json)
+
+VisionFlan-186k dataset is available on [https://vision-flan.github.io/#download](https://vision-flan.github.io/#download)
+
+Then follow the original repo "LLaVA" to download the image data.
+
+## Step1: Calculate PVI value 
+
+```
+bash ./scripts/cal_pvi.sh
+```
+## Step2: Implement task distribution
+```
+python ./scripts/task_distribution_ab.py
+```
+After task distribution We obtain the selected data 
