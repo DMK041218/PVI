@@ -1,4 +1,4 @@
-# PVI:
+# PVI: Perceptive Visual Informativeness for Data-Efficient Multimodal Instruction Tuning
 
 
 <p align="center">
