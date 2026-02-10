@@ -7,17 +7,17 @@ from sklearn.cluster import MiniBatchKMeans
 from tqdm import tqdm
 import torch
 
-# =================配置区域=================
-PVI_CSV_PATH = "/gemini/code/dmk/LLaVA/results/dataset_pvi_scores.csv"
-ORIGINAL_JSON_PATH = "/gemini/code/dmk/LLaVA/datasets/download/llava-v1.5-instruct/llava_v1_5_mix665k.json"
-OUTPUT_JSON_PATH = "/gemini/code/dmk/LLaVA/results/llava_v1.5-7b-top5-ab.json"
+
+PVI_CSV_PATH = "results/dataset_pvi_scores.csv"
+ORIGINAL_JSON_PATH = "llava-v1.5-instruct/llava_v1_5_mix665k.json"
+OUTPUT_JSON_PATH = "llava_v1.5-7b-top5-ab.json"
 
 NUM_CLUSTERS = 20           
 EMBEDDING_MODEL = 'all-MiniLM-L6-v2' 
 
 
 TOP_RATIO = 0.15   
-# =========================================
+
 
 def extract_clean_instruction(conversations):
     if not isinstance(conversations, list): return ""
