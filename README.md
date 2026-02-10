@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Home-ICONS-blue?style=flat&link=https%3A%2F%2Fprincetonvisualai.github.io%2FPVI%2F">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Home-PVI-blue?style=flat&link=https%3A%2F%2Fprincetonvisualai.github.io%2FPVI%2F">
   </a>
   <a href="https://huggingface.co/datasets/AkiyasuDMK/PVI_Dataset">
   <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-PVI__Dataset-blue?color=ffc107&logoColor=white&style=flat">
